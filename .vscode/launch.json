@@ -3,7 +3,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "ng serve",
+      "name": "Debug in Edge",
+      "type": "msedge",
+      "request": "launch",
+      "preLaunchTask": "npm: start",
+      "url": "http://localhost:4200/"
+    },
+    {
+      "name": "Debug in Chrome",
       "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",
@@ -11,10 +18,13 @@
     },
     {
       "name": "ng test",
-      "type": "chrome",
+      "type": "node",
       "request": "launch",
-      "preLaunchTask": "npm: test",
-      "url": "http://localhost:9876/debug.html"
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "test"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
     }
   ]
 }

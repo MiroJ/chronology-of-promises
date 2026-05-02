@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 14 14" role="img" focusable="false"
+    aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#3a5235"
+        d="M1.95 1.32h.63v11.37h-.63z" />
+    <path fill="#99ecc4"
+        d="M10.16 4.16H5.67c-.16 0-.32-.06-.44-.19L4.06 2.8c-.13-.13-.13-.32 0-.44l1.17-1.17c.13-.13.28-.19.44-.19h4.48c.19 0 .32.13.32.32V3.84c0 .19-.13.32-.32.32z" />
+    <path fill="#3a5235"
+        d="M12.37 8.58H5.67c-.16 0-.32-.06-.44-.19L4.06 7.22c-.13-.13-.13-.32 0-.44l1.17-1.17c.13-.13.28-.19.44-.19h6.69c.19 0 .32.13.32.32v2.53c0 .19-.13.32-.32.32z" />
+    <path fill="#709f67"
+        d="M9.84 13h-4.17c-.16 0-.32-.06-.44-.19L4.06 11.64c-.13-.13-.13-.32 0-.44l1.17-1.17c.13-.13.28-.19.44-.19h4.17c.19 0 .32.13.32.32v2.53c0 .19-.13.32-.32.32z" />
+    <g fill="#a6ec99" transform="translate(-.89 -.58) scale(.32)">
+        <circle cx="10" cy="10" r="3" />
+        <circle cx="10" cy="24" r="3" />
+        <circle cx="10" cy="38" r="3" />
+    </g>
+</svg>
