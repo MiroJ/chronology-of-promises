@@ -10,16 +10,16 @@ import { RouterOutlet } from '@angular/router';
 export class App {
 
     items = [
-        { label: 'Първо обещание', details: 'Съдържание на първото обещание', completed: true },
-        { label: 'Второ обещание', details: 'Съдържание на второто обещание', completed: false },
-        { label: 'Трето обещание', details: 'Съдържание на третото обещание', completed: false },
+        { label: 'Първо обещание', details: 'Съдържание на първото обещание', completed: 'completed' as const },
+        { label: 'Второ обещание', details: 'Съдържание на второто обещание', completed: 'unknown' as const },
+        { label: 'Трето обещание', details: 'Съдържание на третото обещание', completed: 'abandoned' as const },
     ];
 
     get activeIndex(): number {
-        return this.items.findIndex(item => !item.completed);
+        return this.items.findIndex(item => item.completed !== 'completed');
     }
 
-    selectedIndex = signal(0);
+    selectedIndex = signal<number | null>(null);
 
     select(index: number): void {
         this.selectedIndex.set(index);
