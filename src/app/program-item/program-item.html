@@ -1,0 +1,42 @@
+<div>
+    <h3>{{ programItem().label }}</h3>
+</div>
+@if (programItem().relatedResultItems.length > 0) {
+<div class="related-results">
+    <h4>Rезултати:</h4>
+    <ul>
+        <ul>
+            @for (result of programItem().relatedResultItems; track result) {
+            <li>
+                {{ result.label }}
+                <span class="status-label">{{ result.status }}</span>
+            </li>
+            }
+        </ul>
+    </ul>
+</div>
+}
+
+@if (programItem().subpoints.length > 0) {
+<div class="subpoints">
+    <ul>
+        @for (subpoint of programItem().subpoints; track subpoint) {
+        <li>
+            <strong>{{ subpoint.label }}</strong>
+            @if (subpoint.relatedResultItems.length > 0) {
+            <div class="related-results">
+                <ul>
+                    @for (result of subpoint.relatedResultItems; track result) {
+                    <li>
+                        {{ result.label }}
+                        <app-status-mark [status]="result.status"></app-status-mark>
+                    </li>
+                    }
+                </ul>
+            </div>
+            }
+        </li>
+        }
+    </ul>
+</div>
+}

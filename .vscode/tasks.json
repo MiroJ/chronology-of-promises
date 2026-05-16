@@ -3,6 +3,26 @@
   "version": "2.0.0",
   "tasks": [
     {
+        "label": "ng serve",
+        "type": "shell",
+        "command": "npm start",
+        "options": {
+            "cwd": "${workspaceFolder}/"
+        },
+        "isBackground": true,
+        "problemMatcher": {
+            "owner": "custom",
+            "pattern": {
+                "regexp": "^$"
+            },
+            "background": {
+                "activeOnStart": true,
+                "beginsPattern": "Application bundle generation",
+                "endsPattern": "Watch mode enabled|Server listening at"
+            }
+        }
+    },
+    {
       "type": "npm",
       "script": "start",
       "isBackground": true,
@@ -12,7 +32,7 @@
         "background": {
           "activeOnStart": true,
           "beginsPattern": {
-            "regexp": "Changes detected"
+            "regexp": "Building\\.\\.\\."
           },
           "endsPattern": {
             "regexp": "bundle generation (complete|failed)"
@@ -30,7 +50,7 @@
         "background": {
           "activeOnStart": true,
           "beginsPattern": {
-            "regexp": "Changes detected"
+            "regexp": "Building\\.\\.\\."
           },
           "endsPattern": {
             "regexp": "bundle generation (complete|failed)"

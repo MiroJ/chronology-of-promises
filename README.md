@@ -1,59 +1,61 @@
 # Хронология на обещанията
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9.
+Този проект е създаден като шаблон за уебсайт, който проследява политически обещания и тяхното изпълнение. Всеки програмист, дори начинаещ, може да го използва. Просто създайте fork в GitHub или го клонирайте локално, след което променете двата файла с данни — [/public/data-program.json](./public/data-program.json) и [/public/data-results.json](./public/data-results.json).
 
-## Development server
+Този проект е генериран с [Angular CLI](https://github.com/angular/angular-cli) версия 21.2.9.
 
-To start a local development server, run:
+## Сървър за разработка
+
+За да стартирате локален сървър за разработка, изпълнете:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+След като сървърът стартира, отворете браузъра и отидете на `http://localhost:4200/`. Приложението ще се презарежда автоматично при всяка промяна на изходните файлове.
 
-## Code scaffolding
+## Генериране на код
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Angular CLI включва мощни инструменти за генериране на код. За да генерирате нов компонент, изпълнете:
 
 ```bash
 ng generate component component-name
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+За пълен списък с наличните схеми (като `components`, `directives` или `pipes`), изпълнете:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+## Изграждане
 
-To build the project run:
+За да изградите проекта, изпълнете:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Това ще компилира проекта и ще запише артефактите в директорията `dist/`. По подразбиране продукционното изграждане оптимизира приложението за производителност и скорост.
 
-## Running unit tests
+## Изпълнение на модулни тестове
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+За изпълнение на модулни тестове с тест-рънъра [Vitest](https://vitest.dev/), използвайте следната команда:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## Изпълнение на end-to-end тестове
 
-For end-to-end (e2e) testing, run:
+За end-to-end (e2e) тестване, изпълнете:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Angular CLI не включва по подразбиране рамка за end-to-end тестване. Можете да изберете такава, която отговаря на вашите нужди.
 
-## Additional Resources
+## Допълнителни ресурси
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+За повече информация относно използването на Angular CLI, включително подробни справки за командите, посетете страницата [Преглед и справка за команди на Angular CLI](https://angular.dev/tools/cli).

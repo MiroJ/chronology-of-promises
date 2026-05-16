@@ -1,0 +1,41 @@
+[
+    {
+        "programIds": [
+            "13.2"
+        ],
+        "label": "България изпрати посланник вместо президент или министър на външните работи в Б9",
+        "date": "2026-05-13",
+        "description": "Как това се свързва с чуването на българския глас в ЕС? Петнайсет държавни глави и високопоставени лица пристигат в румънската столица за срещата на върха на \"Букурещката деветка\" (Б-9). България е представена от посланика си в НАТО.",
+        "status": "failed",
+        "imageUrl": "https://www.segabg.com/sites/default/files/_sega/styles/flexslider_full/public/2026/05/b-9.png.webp",
+        "references": [
+            "https://www.segabg.com/hot/category-foreign-country/bulgariya-e-iznenadvashto-samo-poslanik-na-natovska-sreshta-na-vurha",
+            "https://offnews.bg/sviat/darzhavni-glavi-na-natovskata-sreshta-b-9-v-bukuresht-nie-i-ungaria-u-866759.html"
+        ]
+    },
+    {
+        "programIds": [
+            "1.2"
+        ],
+        "label": "Премахване на охраната на Пеевски и Борисов.",
+        "date": "2026-05-15",
+        "description": "Държавната охрана на Пеевски и Борисов е премахната. Това е стъпка към по-голяма прозрачност и отговорност в управлението на страната.",
+        "status": "completed",
+        "imageUrl": null,
+        "references": [
+        ]
+    },
+    {
+        "programIds": [
+            "13.1"
+        ],
+        "label": "България не подкрепя трибунала срещу Путин.",
+        "date": "2026-05-16",
+        "description": "България не подкрепи инициативата за специален трибунал за преследване на руския президент Владимир Путин заради военната агресия срещу Украйна. Инициативата бе подкрепена от 36 държави, предимно от Европа.",
+        "status": "failed",
+        "imageUrl": null,
+        "references": [
+            "https://darik.bg/balgaria-ne-podkrepi-tribunala-srestu-putin~528231.html"
+        ]
+    }
+]
