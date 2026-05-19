@@ -1,4 +1,5 @@
-import { Component, input } from '@angular/core';
+import { Location } from '@angular/common';
+import { Component, inject, input } from '@angular/core';
 
 @Component({
   selector: 'app-status-mark',
@@ -9,17 +10,18 @@ import { Component, input } from '@angular/core';
 export class StatusMarkComponent {
     /** Input property to receive the status from the parent component. */
     status = input.required<string>();
+    private readonly location = inject(Location);
 
     getSvgPath(status: string): string {
         switch (status) {
             case 'completed':
-                return '/completed.svg';
+                return this.location.prepareExternalUrl('completed.svg');
             case 'in-progress':
-                return '/in-progress.svg';
+                return this.location.prepareExternalUrl('in-progress.svg');
             case 'failed':
-                return '/failed.svg';
+                return this.location.prepareExternalUrl('failed.svg');
             case 'undetermined':
-                return '/undetermined.svg';
+                return this.location.prepareExternalUrl('undetermined.svg');
             default:
                 return '';
         }

@@ -41,6 +41,18 @@ ng build
 
 Това ще компилира проекта и ще запише артефактите в директорията `dist/`. По подразбиране продукционното изграждане оптимизира приложението за производителност и скорост.
 
-## Допълнителни ресурси
+## Публикуване (Build and Publish)
 
-За повече информация относно използването на Angular CLI, включително подробни справки за командите, посетете страницата [Преглед и справка за команди на Angular CLI](https://angular.dev/tools/cli).
+Преди да започнете с публикуването, уверете се че имате `angular-cli-ghpages` NPM пакет инсталиран
+на компютъра в глобалния NPM кеш. Ако го нямате, изпълнете
+
+    npm install -g angular-cli-ghpages
+
+За да публикувате този проект в GitHub Pages, изпълнете следните команди:
+
+    ng build  --base-href https://miroj.github.io/chronology-of-promises/
+    npx angular-cli-ghpages --dir=dist/chronology-of-promises/browser
+
+След няколко секунди, апликацията трябва да е инсталирана на https://miroj.github.io/chronology-of-promises/.
+
+Успех!
