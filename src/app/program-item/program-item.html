@@ -1,42 +1,64 @@
 <div>
-    <h3>{{ programItem().label }}</h3>
+    <h2>{{ programItem().label }}</h2>
 </div>
 @if (programItem().relatedResultItems.length > 0) {
 <div class="related-results">
-    <h4>Rезултати:</h4>
-    <ul>
-        <ul>
-            @for (result of programItem().relatedResultItems; track result) {
-            <li>
-                {{ result.label }}
-                <span class="status-label">{{ result.status }}</span>
-            </li>
-            }
-        </ul>
-    </ul>
+    <h3>Rезултати:</h3>
+    @for (result of programItem().relatedResultItems; track result) {
+    <div>
+        {{ result.label }}
+        <span class="status-label">{{ result.status }}</span>
+    </div>
+    }
 </div>
 }
 
 @if (programItem().subpoints.length > 0) {
-<div class="subpoints">
-    <ul>
+<div class="subpoint-list">
+    <div class="subpoint-item">
         @for (subpoint of programItem().subpoints; track subpoint) {
-        <li>
-            <strong>{{ subpoint.label }}</strong>
-            @if (subpoint.relatedResultItems.length > 0) {
-            <div class="related-results">
-                <ul>
-                    @for (result of subpoint.relatedResultItems; track result) {
-                    <li>
+        <div class="subpoint-label">{{ subpoint.label }}</div>
+        @if (subpoint.relatedResultItems.length > 0) {
+        <div class="results-box">
+            @for (result of subpoint.relatedResultItems; track result; let resultIndex = $index) {
+            @let referenceListId = getReferenceListId(subpoint.id, resultIndex);
+            @let referencesExpanded = isReferencesExpanded(referenceListId);
+            <div class="result-entry">
+                <div class="result-item">
+                    <app-status-mark [status]="result.status"></app-status-mark>
+                    <span class="result-label">
                         {{ result.label }}
-                        <app-status-mark [status]="result.status"></app-status-mark>
-                    </li>
+                    </span>
+                    @if (result.references.length > 0) {
+                    <button
+                        type="button"
+                        class="references-toggle"
+                        [attr.aria-controls]="referenceListId"
+                        [attr.aria-label]="referencesExpanded ? 'Collapse references' : 'Expand references'"
+                        [attr.aria-expanded]="referencesExpanded"
+                        (click)="toggleReferences(referenceListId)"
+                    >
+                        <span class="references-toggle-text text-secondary">{{referencesExpanded ? 'Скрий' : 'Прочети повече'}}</span>
+                        <span
+                            class="references-toggle-icon text-secondary"
+                            [class.is-expanded]="referencesExpanded"
+                            aria-hidden="true"
+                        ></span>
+                    </button>
                     }
-                </ul>
+                </div>
+                @if (result.references.length > 0 && referencesExpanded) {
+                <div class="result-references" [attr.id]="referenceListId">
+                    @for (url of result.references; track url) {
+                    <a [href]="url">{{ urlProtocol(url) }}<strong>{{ urlDomain(url) }}</strong>{{ urlPath(url) }}</a>
+                    }
+                </div>
+                }
             </div>
             }
-        </li>
+        </div>
         }
-    </ul>
+        }
+    </div>
 </div>
 }

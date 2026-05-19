@@ -10,21 +10,6 @@ export class StatusMarkComponent {
     /** Input property to receive the status from the parent component. */
     status = input.required<string>();
 
-    getStatusClass(status: string): string {
-        switch (status) {
-            case 'completed':
-                return 'status-completed';
-            case 'in-progress':
-                return 'status-in-progress';
-            case 'failed':
-                return 'status-failed';
-            case 'undetermined':
-                return 'status-undetermined';
-            default:
-                return '';
-        }
-    }
-
     getSvgPath(status: string): string {
         switch (status) {
             case 'completed':
