@@ -1,0 +1,57 @@
+[
+    {
+        "programIds": [
+            "1.2"
+        ],
+        "label": "Премахване на охраната на Пеевски и Борисов.",
+        "date": "2026-05-15",
+        "description": "Държавната охрана на Пеевски и Борисов е премахната. Това е стъпка към по-голяма прозрачност и отговорност в управлението на страната.",
+        "status": "completed",
+        "imageUrl": null,
+        "references": [
+            "https://www.vesti.bg/bulgaria/svalenata-ohrana-na-borisov-i-peevski-otnovo-otvori-spora-za-pravilata-v-nso-6259860",
+            "https://paragraf.bg/ivan-demerdzhiev-peevski-i-borisov-ostavat-bez-darzhavna-ohrana/",
+            "https://www.segabg.com/hot/category-bulgaria/nso-svali-ohranata-na-peevski-i-borisov"
+        ]
+    },
+    {
+        "programIds": [
+            "13.2"
+        ],
+        "label": "България изпрати посланник вместо президент или министър на външните работи в Б9",
+        "date": "2026-05-13",
+        "description": "Как това се свързва с чуването на българския глас в ЕС? Петнайсет държавни глави и високопоставени лица пристигат в румънската столица за срещата на върха на \"Букурещката деветка\" (Б-9). България е представена от посланика си в НАТО.",
+        "status": "failed",
+        "imageUrl": "https://www.segabg.com/sites/default/files/_sega/styles/flexslider_full/public/2026/05/b-9.png.webp",
+        "references": [
+            "https://clubz.bg/174834",
+            "https://www.mediapool.bg/upravlyavashtite-predlagat-skandalni-promeni-v-pravilnika-na-parlamenta-preduprediha-ot-pp-i-db-news383505.html",
+            "https://www.parliament.bg/pub/cW/20260518164119_52-654-00-14-1.pdf"
+        ]
+    },
+    {
+        "programIds": [
+            "13.1"
+        ],
+        "label": "България не подкрепя трибунала срещу Путин.",
+        "date": "2026-05-16",
+        "description": "България не подкрепи инициативата за специален трибунал за преследване на руския президент Владимир Путин заради военната агресия срещу Украйна. Инициативата бе подкрепена от 36 държави, предимно от Европа.",
+        "status": "failed",
+        "imageUrl": null,
+        "references": [
+            "https://darik.bg/balgaria-ne-podkrepi-tribunala-srestu-putin~528231.html"
+        ]
+    },
+    {
+        "programIds": [
+            "100.1"
+        ],
+        "label": "Правилник на Народното събрание, с големи ограничения за опозицията",
+        "date": "2026-05-19",
+        "description": "Новият правилник на Народното събрание въвежда скандални промени и значителни ограничения за опозицията.",
+        "status": "failed",
+        "imageUrl": null,
+        "references": [
+        ]
+    }
+]
