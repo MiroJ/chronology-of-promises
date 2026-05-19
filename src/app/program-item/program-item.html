@@ -26,7 +26,7 @@
             <div class="result-entry">
                 <div class="result-item">
                     <app-status-mark [status]="result.status"></app-status-mark>
-                    <span class="result-label">
+                    <span class="result-label" [title]="result.description">
                         {{ result.label }}
                     </span>
                     @if (result.references.length > 0) {

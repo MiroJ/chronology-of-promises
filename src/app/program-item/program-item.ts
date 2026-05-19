@@ -4,7 +4,9 @@ import { StatusMarkComponent } from '../status-mark/status-mark';
 
 @Component({
     selector: 'app-program-item',
-    imports: [StatusMarkComponent],
+    imports: [
+        StatusMarkComponent,
+    ],
     templateUrl: './program-item.html',
     styleUrls: ['./program-item.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
