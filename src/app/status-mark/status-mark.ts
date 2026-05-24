@@ -9,7 +9,7 @@ import { Component, inject, input } from '@angular/core';
 })
 export class StatusMarkComponent {
     /** Input property to receive the status from the parent component. */
-    status = input.required<string>();
+    status = input<string>('');
     private readonly location = inject(Location);
 
     getSvgPath(status: string): string {

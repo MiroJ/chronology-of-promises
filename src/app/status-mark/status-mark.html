@@ -1,3 +1,7 @@
 <div class="status-mark">
+    @if (getSvgPath(status())) {
     <img [src]="getSvgPath(status())" [alt]="status()" class="status-icon"/>
+    } @else {
+    <img [src]="getSvgPath('undetermined')" alt="undetermined" class="status-icon status-icon-placeholder"/>
+    }
 </div>

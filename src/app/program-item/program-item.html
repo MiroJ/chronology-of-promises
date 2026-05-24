@@ -18,14 +18,15 @@
     <div class="subpoint-item">
         @for (subpoint of programItem().subpoints; track subpoint) {
         <div class="subpoint-label">{{ subpoint.label }}</div>
-        @if (subpoint.relatedResultItems.length > 0) {
         <div class="results-box">
+            @if (subpoint.relatedResultItems.length > 0) {
             @for (result of subpoint.relatedResultItems; track result; let resultIndex = $index) {
             @let referenceListId = getReferenceListId(subpoint.id, resultIndex);
             @let referencesExpanded = isReferencesExpanded(referenceListId);
             <div class="result-entry">
                 <div class="result-item">
                     <app-status-mark [status]="result.status"></app-status-mark>
+                    <span class="result-date">{{ result.date | date:'shortDate' }}</span>
                     <span class="result-label" [title]="result.description">
                         {{ result.label }}
                     </span>
@@ -56,8 +57,14 @@
                 }
             </div>
             }
+            }
+            <div class="result-entry placeholder-entry">
+                <div class="result-item">
+                    <app-status-mark></app-status-mark>
+                    <span class="result-label placeholder-line" aria-hidden="true"></span>
+                </div>
+            </div>
         </div>
-        }
         }
     </div>
 </div>

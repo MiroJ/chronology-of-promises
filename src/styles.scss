@@ -1,6 +1,5 @@
 @use 'variables.scss';
 
-
 body {
     color: variables.$text-color;
     background-color: #3B3923;
@@ -29,17 +28,6 @@ a {
     &:hover {
         text-decoration: underline;
     }
-}
-
-.status-mark {
-    display: inline-block;
-    height: 1rem;
-}
-
-.status-icon {
-    width: 2rem;
-    height: 2rem;
-    display: inline-block;
 }
 
 .text-primary {
