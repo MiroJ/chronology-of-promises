@@ -1,13 +1,11 @@
 import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
 import { ProgramItem } from '../app';
 import { StatusMarkComponent } from '../status-mark/status-mark';
-import { DatePipe } from '@angular/common';
 
 @Component({
     selector: 'app-program-item',
     imports: [
         StatusMarkComponent,
-        DatePipe,
     ],
     templateUrl: './program-item.html',
     styleUrls: ['./program-item.scss'],
