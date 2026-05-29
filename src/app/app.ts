@@ -88,7 +88,7 @@ export interface ProgramSubpoint {
 
 export interface ResultItem {
     programIds: string[]; // References to program items (e.g., "1", "2.1")
-    label: string;
+    title: string;
     date: Date;
     description: string;
     status: '' | 'ok' | 'succeeded' | 'failed';
