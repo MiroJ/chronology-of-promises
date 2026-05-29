@@ -2,11 +2,11 @@ import { ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@ang
 import { HttpClient } from '@angular/common/http';
 import { RouterOutlet } from '@angular/router';
 import { forkJoin } from 'rxjs';
-import { ProgramItemComponent } from './program-item/program-item';
+import { ProgramSectionComponent } from './program-section/program-section';
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, ProgramItemComponent],
+    imports: [RouterOutlet, ProgramSectionComponent],
     templateUrl: './app.html',
     styleUrls: ['./app.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush
@@ -14,22 +14,22 @@ import { ProgramItemComponent } from './program-item/program-item';
 export class App implements OnInit {
     private http = inject(HttpClient);
 
-    readonly programItems = signal<ProgramItem[]>([]);
-    readonly title = signal('');
+    readonly programSections = signal<ProgramSection[]>([]);
+    readonly programTitle = signal('');
 
     ngOnInit(): void {
         forkJoin({
-            dataPrograms: this.http.get<ProgramData>('data-program.json'),
+            dataPrograms: this.http.get<ProgramDocument>('data-program.json'),
             dataResults: this.http.get<ResultItem[]>('data-results.json')
         }).subscribe(({ dataPrograms, dataResults }) => {
-            this.title.set(dataPrograms.title);
+            this.programTitle.set(dataPrograms.programTitle);
 
-            const linkedProgramItems = dataPrograms.items.map(item => ({
-                ...item,
-                relatedResultItems: [] as ResultItem[],
-                subpoints: item.subpoints.map(sp => ({
-                    ...sp,
-                    relatedResultItems: [] as ResultItem[]
+            const linkedProgramItems = dataPrograms.sections.map(section => ({
+                ...section,
+                relatedResults: [] as ResultItem[],
+                items: section.items.map(item => ({
+                    ...item,
+                    relatedResults: [] as ResultItem[]
                 }))
             }));
 
@@ -41,24 +41,24 @@ export class App implements OnInit {
                 for (const id of resultItem.programIds) {
                     if (id.includes('.')) {
                         const [itemId, subpointId] = id.split('.').map(Number);
-                        const programItem = linkedProgramItems.find(pi => pi.id === itemId);
-                        const subpoint = programItem?.subpoints.find(sp => sp.id === subpointId);
+                        const programItem = linkedProgramItems.find(x => x.id === itemId);
+                        const subpoint = programItem?.items.find(x => x.id === subpointId);
 
                         if (subpoint) {
-                            subpoint.relatedResultItems.push(resultItem);
+                            subpoint.relatedResults.push(resultItem);
                         }
                     } else {
                         const itemId = Number(id);
                         const programItem = linkedProgramItems.find(pi => pi.id === itemId);
 
                         if (programItem) {
-                            programItem.relatedResultItems.push(resultItem);
+                            programItem.relatedResults.push(resultItem);
                         }
                     }
                 }
             }
 
-            this.programItems.set(linkedProgramItems);
+            this.programSections.set(linkedProgramItems);
         });
     }
 
@@ -66,22 +66,22 @@ export class App implements OnInit {
 
 // Models data-program.json
 
-export interface ProgramData {
+export interface ProgramDocument {
+    programTitle: string;
+    sections: ProgramSection[];
+}
+
+export interface ProgramSection {
+    id: number;
+    sectionTitle: string;
+    items: ProgramSectionItem[];
+    relatedResults: ResultItem[];
+}
+
+export interface ProgramSectionItem {
+    id: number;
     title: string;
-    items: ProgramItem[];
-}
-
-export interface ProgramItem {
-    id: number;
-    label: string;
-    subpoints: ProgramSubpoint[];
-    relatedResultItems: ResultItem[];
-}
-
-export interface ProgramSubpoint {
-    id: number;
-    label: string;
-    relatedResultItems: ResultItem[];
+    relatedResults: ResultItem[];
 }
 
 // Models data-results.json
@@ -89,8 +89,8 @@ export interface ProgramSubpoint {
 export interface ResultItem {
     programIds: string[]; // References to program items (e.g., "1", "2.1")
     title: string;
-    date: Date;
     description: string;
+    date: Date;
     status: '' | 'ok' | 'succeeded' | 'failed';
     imageUrl: string;
     references: string[];

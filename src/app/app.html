@@ -1,5 +1,5 @@
 <div class="title-card">
-    <h1>{{ title() || 'Хронология на обещанията' }}</h1>
+    <h1>{{ programTitle() || 'Хронология на обещанията' }}</h1>
     <p class="subtitle">
         Обещали са ви много по време на изборите?<br />
         Каква част от тези обещания ще бъдат изпълнени, кои са в процес на изпълнение и кои са просто лъжи.
@@ -18,10 +18,10 @@
 
     <hr style="max-width: 100px;" />
 
-    @if (programItems().length > 0) {
-    <div class="program-list">
-        @for (item of programItems(); track item.id) {
-        <app-program-item [programItem]="item"></app-program-item>
+    @if (programSections().length > 0) {
+    <div>
+        @for (item of programSections(); track item.id) {
+        <app-program-section [programSection]="item"></app-program-section>
         }
     </div>
     }

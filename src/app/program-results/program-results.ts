@@ -1,19 +1,16 @@
 import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
-import { ProgramItem } from '../app';
+import { ProgramSectionItem } from '../app';
 import { StatusMarkComponent } from '../status-mark/status-mark';
 
 @Component({
-    selector: 'app-program-item',
-    imports: [
-        StatusMarkComponent,
-    ],
-    templateUrl: './program-item.html',
-    styleUrls: ['./program-item.scss'],
+    selector: 'app-program-results',
+    imports: [StatusMarkComponent],
+    templateUrl: './program-results.html',
+    styleUrls: ['./program-results.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProgramItemComponent {
-    /** Input property to receive a program item from the parent component. */
-    programItem = input.required<ProgramItem>();
+export class ProgramResultsComponent {
+    section = input.required<ProgramSectionItem>();
     readonly expandedReferences = signal<Record<string, boolean>>({});
 
     toggleReferences(referenceListId: string): void {

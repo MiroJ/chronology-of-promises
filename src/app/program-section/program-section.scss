@@ -1,0 +1,17 @@
+.section-list {
+
+    .section {
+        margin-bottom: 0.5rem;
+
+        .section-title {
+            font-size: 1.25rem;
+            margin-top: 1rem;
+
+            &:before {
+                content: '•';
+                margin: 0 0.5rem;
+            }
+        }
+    }
+
+}

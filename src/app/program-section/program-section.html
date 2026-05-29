@@ -1,0 +1,24 @@
+<div>
+    <h2>{{ programSection().sectionTitle }}</h2>
+</div>
+@if (programSection().relatedResults.length > 0) {
+<div class="related-results">
+    <h3>Rезултати:</h3>
+    @for (result of programSection().relatedResults; track result) {
+    <div>
+        {{ result.title }}
+        <span class="status-label">{{ result.status }}</span>
+    </div>
+    }
+</div>
+}
+@if (programSection().items.length > 0) {
+<div class="section-list">
+    <div class="section">
+        @for (section of programSection().items; track section) {
+        <div class="section-title">{{ section.title }}</div>
+        <app-program-results [section]="section"></app-program-results>
+        }
+    </div>
+</div>
+}
