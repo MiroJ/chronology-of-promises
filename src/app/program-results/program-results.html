@@ -11,7 +11,6 @@
         </span>
         @if (result.references.length > 0) {
         <button type="button" class="references-toggle" [attr.aria-controls]="referenceListId" [attr.aria-label]="referencesExpanded ? 'Collapse references' : 'Expand references'" [attr.aria-expanded]="referencesExpanded" (click)="$event.stopPropagation(); toggleReferences(referenceListId)">
-            <span class="references-toggle-text text-secondary">{{referencesExpanded ? 'Скрий' : 'Oще'}}</span>
             <span class="references-toggle-icon text-secondary" [class.is-expanded]="referencesExpanded" aria-hidden="true"></span>
         </button>
         }

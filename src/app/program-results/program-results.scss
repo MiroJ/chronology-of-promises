@@ -10,8 +10,9 @@
         align-items: center;
         min-width: 0;
         gap: 0.75rem;
-        margin-left: 1rem;
-        cursor: help;
+        padding-left: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
 
         &:hover {
             background-color: variables.$background-color;
@@ -58,6 +59,7 @@
             .references-toggle-icon {
                 width: 0.65rem;
                 height: 0.65rem;
+                margin-bottom: 4px;
                 border-right: 2px solid currentColor;
                 border-bottom: 2px solid currentColor;
                 transform: rotate(45deg) translateY(-0.1rem);
