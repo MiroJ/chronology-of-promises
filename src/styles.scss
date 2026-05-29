@@ -2,17 +2,18 @@
 
 body {
     color: variables.$text-color;
-    background-color: #3B3923;
+    background-color: variables.$background-color;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-    background-color: variables.$background-color;
+    background-color: variables.$paper-color;
     max-width: 900px;
     margin: 20px auto;
     padding: 20px 40px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1,

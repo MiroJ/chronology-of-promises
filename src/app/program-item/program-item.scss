@@ -13,21 +13,15 @@
             &:before {
                 content: '•';
                 margin-right: 0.5rem;
-                margin-left: 1.5rem;
+                margin-left: 1rem;
             }
         }
     }
 
     .results-box {
         display: grid;
-        row-gap: 0.75rem;
         margin-left: 1em;
         margin-bottom: 1em;
-
-        .result-entry {
-            display: grid;
-            row-gap: 0.35rem;
-        }
 
         .result-item {
             display: flex;

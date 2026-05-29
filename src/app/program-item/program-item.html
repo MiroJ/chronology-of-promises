@@ -12,7 +12,6 @@
     }
 </div>
 }
-
 @if (programItem().subpoints.length > 0) {
 <div class="subpoint-list">
     <div class="subpoint-item">
@@ -23,39 +22,27 @@
             @for (result of subpoint.relatedResultItems; track result; let resultIndex = $index) {
             @let referenceListId = getReferenceListId(subpoint.id, resultIndex);
             @let referencesExpanded = isReferencesExpanded(referenceListId);
-            <div class="result-entry">
-                <div class="result-item">
-                    <app-status-mark [status]="result.status"></app-status-mark>
-                    <span class="result-date">{{ result.date | date:'shortDate' }}</span>
-                    <span class="result-label" [title]="result.description">
-                        {{ result.label }}
-                    </span>
-                    @if (result.references.length > 0) {
-                    <button
-                        type="button"
-                        class="references-toggle"
-                        [attr.aria-controls]="referenceListId"
-                        [attr.aria-label]="referencesExpanded ? 'Collapse references' : 'Expand references'"
-                        [attr.aria-expanded]="referencesExpanded"
-                        (click)="toggleReferences(referenceListId)"
-                    >
-                        <span class="references-toggle-text text-secondary">{{referencesExpanded ? 'Скрий' : 'Прочети повече'}}</span>
-                        <span
-                            class="references-toggle-icon text-secondary"
-                            [class.is-expanded]="referencesExpanded"
-                            aria-hidden="true"
-                        ></span>
-                    </button>
-                    }
-                </div>
-                @if (result.references.length > 0 && referencesExpanded) {
-                <div class="result-references" [attr.id]="referenceListId">
-                    @for (url of result.references; track url) {
-                    <a [href]="url">{{ urlProtocol(url) }}<strong>{{ urlDomain(url) }}</strong>{{ urlPath(url) }}</a>
-                    }
-                </div>
+            <div class="result-item">
+                <app-status-mark [status]="result.status"></app-status-mark>
+                <span class="result-date">{{ result.date }}</span>
+                <span class="result-label" [title]="result.description">
+                    {{ result.label }}
+                </span>
+                @if (result.references.length > 0) {
+                <button type="button" class="references-toggle" [attr.aria-controls]="referenceListId" [attr.aria-label]="referencesExpanded ? 'Collapse references' : 'Expand references'" [attr.aria-expanded]="referencesExpanded"
+                    (click)="toggleReferences(referenceListId)">
+                    <span class="references-toggle-text text-secondary">{{referencesExpanded ? 'Скрий' : 'Прочети повече'}}</span>
+                    <span class="references-toggle-icon text-secondary" [class.is-expanded]="referencesExpanded" aria-hidden="true"></span>
+                </button>
                 }
             </div>
+            @if (result.references.length > 0 && referencesExpanded) {
+            <div class="result-references" [attr.id]="referenceListId">
+                @for (url of result.references; track url) {
+                <a [href]="url">{{ urlProtocol(url) }}<strong>{{ urlDomain(url) }}</strong>{{ urlPath(url) }}</a>
+                }
+            </div>
+            }
             }
             }
             <div class="result-entry placeholder-entry">

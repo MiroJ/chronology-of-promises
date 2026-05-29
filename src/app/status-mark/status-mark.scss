@@ -14,8 +14,9 @@
     justify-content: center;
 
     .status-icon-placeholder {
-        width: 0.85em;
+        width: 24px;
         height: auto;
+        margin-top: 2px;
         filter: grayscale(50%);
     }
 }
