@@ -13,6 +13,10 @@
         margin-left: 1rem;
         cursor: help;
 
+        &:hover {
+            background-color: variables.$background-color;
+        }
+
         .result-date {
             color: variables.$secondary-color;
             flex-shrink: 0;
@@ -91,6 +95,10 @@
     .placeholder-entry {
         .result-item {
             opacity: 0.8;
+
+            &:hover {
+                background-color: inherit;
+            }
         }
     }
 }
