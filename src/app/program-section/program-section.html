@@ -3,13 +3,7 @@
 </div>
 @if (programSection().relatedResults.length > 0) {
 <div class="related-results">
-    <h3>Rезултати:</h3>
-    @for (result of programSection().relatedResults; track result) {
-    <div>
-        {{ result.title }}
-        <span class="status-label">{{ result.status }}</span>
-    </div>
-    }
+    <app-program-results [section]="programSection()"></app-program-results>
 </div>
 }
 @if (programSection().items.length > 0) {

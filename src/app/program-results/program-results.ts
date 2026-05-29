@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
-import { ProgramSectionItem } from '../app';
+import { ProgramSection, ProgramSectionItem } from '../app';
 import { StatusMarkComponent } from '../status-mark/status-mark';
 
 @Component({
@@ -10,7 +10,7 @@ import { StatusMarkComponent } from '../status-mark/status-mark';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProgramResultsComponent {
-    section = input.required<ProgramSectionItem>();
+    section = input.required<ProgramSection | ProgramSectionItem>();
     readonly expandedReferences = signal<Record<string, boolean>>({});
 
     toggleReferences(referenceListId: string): void {

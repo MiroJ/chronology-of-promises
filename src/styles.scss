@@ -22,6 +22,10 @@ h3 {
     color: variables.$primary-color;
 }
 
+h2 {
+    margin-block-end: 0.25em;
+}
+
 a {
     color: variables.$secondary-color;
     text-decoration: none;
