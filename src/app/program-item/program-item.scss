@@ -1,0 +1,115 @@
+@use '../../variables.scss';
+
+.subpoint-list {
+    margin-bottom: 1rem;
+
+    .subpoint-item {
+        margin-bottom: 0.5rem;
+
+        .subpoint-label {
+            font-size: 1.25rem;
+            margin-top: 1rem;
+
+            &:before {
+                content: '•';
+                margin-right: 0.5rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .results-box {
+        display: grid;
+        margin-left: 1em;
+        margin-bottom: 1em;
+
+        .result-item {
+            display: flex;
+            align-items: center;
+            min-width: 0;
+            gap: 0.75rem;
+            margin-left: 1rem;
+            cursor: help;
+
+            .result-date {
+                color: variables.$secondary-color;
+                flex-shrink: 0;
+            }
+
+            .result-label {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .references-toggle {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                flex-shrink: 0;
+                min-width: 2rem;
+                height: 2rem;
+                padding: 0 0.25rem;
+                color: variables.$primary-color;
+                background: transparent;
+                border: 0;
+                border-radius: 999px;
+                cursor: pointer;
+                font: inherit;
+
+                .references-toggle-text {
+                    font-size: 0.85rem;
+                    font-weight: 200;
+                    line-height: 1;
+                    white-space: nowrap;
+                }
+
+                &:focus-visible {
+                    outline: 2px solid variables.$primary-color;
+                    outline-offset: 2px;
+                }
+
+                .references-toggle-icon {
+                    width: 0.65rem;
+                    height: 0.65rem;
+                    border-right: 2px solid currentColor;
+                    border-bottom: 2px solid currentColor;
+                    transform: rotate(45deg) translateY(-0.1rem);
+                    transition: transform 0.16s ease;
+
+                    &.is-expanded {
+                        transform: rotate(225deg) translateY(-0.1rem);
+                    }
+                }
+            }
+        }
+
+        .result-references {
+            min-width: 0;
+            margin-left: 4rem;
+
+            pre {
+                white-space: pre-wrap;
+                margin: 0.5rem 0;
+                font-family: inherit;
+                border-style: inset;
+                background-color: variables.$background-color;
+                padding: 0.5rem;
+            }
+
+            a {
+                display: block;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                max-width: 100%;
+            }
+        }
+
+        .placeholder-entry {
+            .result-item {
+                opacity: 0.8;
+            }
+        }
+    }
+}
