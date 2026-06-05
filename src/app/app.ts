@@ -3,10 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { RouterOutlet } from '@angular/router';
 import { forkJoin } from 'rxjs';
 import { ProgramSectionComponent } from './program-section/program-section';
+import { CounterComponent } from './counter/counter';
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, ProgramSectionComponent],
+    imports: [RouterOutlet, ProgramSectionComponent, CounterComponent],
     templateUrl: './app.html',
     styleUrls: ['./app.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush
@@ -16,6 +17,7 @@ export class App implements OnInit {
 
     readonly programSections = signal<ProgramSection[]>([]);
     readonly programTitle = signal('');
+    readonly startDay = signal<string>('');
 
     ngOnInit(): void {
         forkJoin({
@@ -23,6 +25,7 @@ export class App implements OnInit {
             dataResults: this.http.get<ResultItem[]>('data-results.json')
         }).subscribe(({ dataPrograms, dataResults }) => {
             this.programTitle.set(dataPrograms.programTitle);
+            this.startDay.set(dataPrograms.startDay);
 
             const linkedProgramItems = dataPrograms.sections.map(section => ({
                 ...section,
@@ -68,6 +71,7 @@ export class App implements OnInit {
 
 export interface ProgramDocument {
     programTitle: string;
+    startDay: string;
     sections: ProgramSection[];
 }
 

@@ -1,0 +1,26 @@
+<div class="counter-box shadow border">
+    @if (elapsedTime().days > 0) {
+    <div class="counter-title">Правителството е на власт от</div>
+    <div class="counter">
+        <div class="counter-item">
+            <span class="counter-value">{{ elapsedTime().days }}</span>
+            <span class="counter-label">дни</span>
+        </div>
+        <div class="counter-separator">:</div>
+        <div class="counter-item">
+            <span class="counter-value">{{ formatNumber(elapsedTime().hours) }}</span>
+            <span class="counter-label">часа</span>
+        </div>
+        <div class="counter-separator">:</div>
+        <div class="counter-item">
+            <span class="counter-value">{{ formatNumber(elapsedTime().minutes) }}</span>
+            <span class="counter-label">минути</span>
+        </div>
+        <div class="counter-separator">:</div>
+        <div class="counter-item">
+            <span class="counter-value">{{ formatNumber(elapsedTime().seconds) }}</span>
+            <span class="counter-label">секунди</span>
+        </div>
+    </div>
+    }
+</div>
