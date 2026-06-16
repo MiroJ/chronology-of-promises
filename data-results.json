@@ -182,5 +182,20 @@
             "https://dariknews.bg/novini/bylgariia/kraj-na-skritite-obshtestveni-porychki-puskat-sigma-sistemata-koiato-pokazva-kyde-otivat-parite-2458065",
             "https://epicenter.bg/article/Pravitelstvoto-predstavya-SIGMA---novata-sistema-za-kontrol-na-obshtestvenite-porachki/424642/2/0"
         ]
+    },
+    {
+        "programIds": [
+            "1.4"
+        ],
+        "title": "SIGMA – нов инструмент с изкуствен интелект ще следи обществените поръчки",
+        "date": "2026-06-16",
+        "description": "Представен е SIGMA – нов публичен инструмент за прозрачност на обществените поръчки с цел край на скритите схеми. Това отговаря пряко на обещанието за AI контрол върху обществените поръчки.",
+        "status": "completed",
+        "imageUrl": null,
+        "references": [
+            "https://www.vesti.bg/bulgaria/kraj-na-skritite-shemi-sigma-nov-instrument-s-izkustven-intelekt-shte-sledi-obshtestvenite-porychki-6262448",
+            "https://dariknews.bg/novini/bylgariia/kraj-na-skritite-obshtestveni-porychki-puskat-sigma-sistemata-koiato-pokazva-kyde-otivat-parite-2458065",
+            "https://epicenter.bg/article/Pravitelstvoto-predstavya-SIGMA---novata-sistema-za-kontrol-na-obshtestvenite-porachki/424642/2/0"
+        ]
     }
 ]
