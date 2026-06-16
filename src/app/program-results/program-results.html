@@ -3,7 +3,7 @@
     @for (result of section().relatedResults; track result; let resultIndex = $index) {
     @let referenceListId = getReferenceListId(section().id, resultIndex);
     @let referencesExpanded = isReferencesExpanded(referenceListId);
-    <div class="result-item" [title]="result.description" (click)="toggleReferences(referenceListId)">
+    <div class="result-item" [class]="'status-' + (result.status || 'undetermined')" [title]="result.description" (click)="toggleReferences(referenceListId)">
         <app-status-mark [status]="result.status"></app-status-mark>
         <span class="result-date">{{ result.date }}</span>
         <span class="result-label">

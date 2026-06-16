@@ -1,51 +1,131 @@
-@use 'variables.scss';
+@use 'variables.scss' as v;
+
+:root {
+    --primary: #{v.$primary-color};
+    --primary-dark: #{v.$primary-dark};
+    --primary-light: #{v.$primary-light};
+    --secondary: #{v.$secondary-color};
+    --background: #{v.$background-color};
+    --paper: #{v.$paper-color};
+    --text: #{v.$text-color};
+    --muted: #{v.$muted-color};
+    --border: #{v.$border-color};
+
+    --status-completed: #{v.$status-completed};
+    --status-progress: #{v.$status-progress};
+    --status-failed: #{v.$status-failed};
+    --status-unknown: #{v.$status-unknown};
+
+    --radius-sm: #{v.$radius-sm};
+    --radius-md: #{v.$radius-md};
+    --radius-lg: #{v.$radius-lg};
+
+    --shadow-sm: #{v.$shadow-sm};
+    --shadow-md: #{v.$shadow-md};
+    --shadow-lg: #{v.$shadow-lg};
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
 
 body {
-    color: variables.$text-color;
-    background-color: variables.$background-color;
+    margin: 0;
+    color: v.$text-color;
+    background-color: v.$background-color;
+    background-image:
+        radial-gradient(1200px 600px at 50% -200px, rgba(93, 139, 58, 0.10), transparent 70%),
+        radial-gradient(900px 500px at 100% 0, rgba(140, 29, 64, 0.05), transparent 60%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 .container {
-    background-color: variables.$paper-color;
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px 40px;
-    border-radius: 10px;
+    background-color: v.$paper-color;
+    max-width: 880px;
+    margin: 28px auto 64px;
+    padding: 36px 44px 44px;
+    border-radius: v.$radius-lg;
+    border: 1px solid v.$border-color;
+    box-shadow: v.$shadow-lg;
 }
 
 h1,
 h2,
 h3 {
-    color: variables.$primary-color;
+    font-family: 'Source Serif 4', Georgia, serif;
+    color: v.$primary-dark;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+h1 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    font-weight: 700;
+    margin: 0 0 0.4em;
 }
 
 h2 {
+    font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+    font-weight: 600;
     margin-block-end: 0.25em;
 }
 
 a {
-    color: variables.$secondary-color;
+    color: v.$secondary-color;
     text-decoration: none;
+    transition: color 0.15s ease;
 
     &:hover {
         text-decoration: underline;
     }
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, v.$border-color 20%, v.$border-color 80%, transparent);
+    margin: 1.75rem auto;
+}
+
 .text-primary {
-    color: variables.$primary-color;
+    color: v.$primary-color;
 }
 
 .text-secondary {
-    color: variables.$secondary-color;
+    color: v.$secondary-color;
 }
 
 .shadow {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    box-shadow: v.$shadow-md;
 }
 
 .border {
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid v.$border-color;
+}
+
+@media (max-width: 640px) {
+    .container {
+        margin: 12px;
+        padding: 22px 18px 28px;
+        border-radius: v.$radius-md;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }

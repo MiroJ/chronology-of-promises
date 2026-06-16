@@ -1,31 +1,41 @@
-@use "../../variables";
+@use '../../variables.scss' as v;
 
 .status-mark {
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 18px;
-    width: 18px;
-    border: 3px solid variables.$border-color;
-    overflow: visible;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    height: 30px;
+    width: 30px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: v.$background-color;
+    border: 1px solid v.$border-color;
+
+    &.status-completed {
+        background: rgba(v.$status-completed, 0.14);
+        border-color: rgba(v.$status-completed, 0.35);
+    }
+    &.status-in-progress {
+        background: rgba(v.$status-progress, 0.16);
+        border-color: rgba(v.$status-progress, 0.4);
+    }
+    &.status-failed {
+        background: rgba(v.$status-failed, 0.14);
+        border-color: rgba(v.$status-failed, 0.35);
+    }
+    &.status-undetermined {
+        background: v.$background-color;
+        border-color: v.$border-color;
+    }
 
     .status-icon-placeholder {
-        width: 24px;
-        height: auto;
-        margin-top: 2px;
-        filter: grayscale(50%);
+        opacity: 0.6;
     }
 }
 
 .status-icon {
-    width: 2.6rem;
-    height: 2.6rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }

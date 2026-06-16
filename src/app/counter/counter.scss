@@ -1,54 +1,88 @@
-@use '../../variables.scss';
+@use '../../variables.scss' as v;
 
 .counter-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: linear-gradient(135deg, darken(variables.$background-color, 5%) 0%, darken(variables.$background-color, 7%) 100%);
-    border-radius: 12px;
+    margin: 2rem auto 0;
+    padding: 1.5rem 1.75rem;
+    max-width: 560px;
+    background: v.$paper-color;
+    border: 1px solid v.$border-color;
+    border-radius: v.$radius-lg;
+    box-shadow: v.$shadow-md;
     min-height: 100px;
 
     .counter-title {
         display: block;
-        font-size: 1rem;
-        margin-bottom: 1rem;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: v.$muted-color;
+        margin-bottom: 1.1rem;
     }
 
     .counter {
         display: flex;
-        align-items: flex-start;
-        gap: 0.5rem;
+        align-items: stretch;
+        gap: 0.4rem;
+    }
+
+    .counter-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.45rem;
+        min-width: 64px;
+        padding: 0.6rem 0.4rem;
+        background: v.$primary-light;
+        border: 1px solid rgba(v.$primary-color, 0.18);
+        border-radius: v.$radius-md;
+    }
+
+    .counter-value {
+        font-size: 2.1rem;
+        color: v.$primary-dark;
+        font-weight: 800;
+        line-height: 1;
+        font-variant-numeric: tabular-nums;
+        font-feature-settings: 'tnum' 1;
+    }
+
+    .counter-label {
+        font-size: 0.7rem;
+        color: v.$muted-color;
         font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: lowercase;
+    }
 
-        .counter-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.25rem;
-        }
+    .counter-separator {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        color: rgba(v.$primary-color, 0.4);
+        font-weight: 700;
+    }
+}
 
-        .counter-value {
-            font-size: 2rem;
-            color: variables.$primary-color;
-            font-weight: 700;
-            line-height: 1;
-        }
+@media (max-width: 640px) {
+    .counter-box {
+        padding: 1.25rem 1rem;
+    }
 
-        .counter-label {
-            font-size: 0.75rem;
-            color: rgba(0, 0, 0, 0.6);
-            font-weight: 500;
-            text-transform: lowercase;
-        }
+    .counter-box .counter-item {
+        min-width: 0;
+        flex: 1;
+    }
 
-        .counter-separator {
-            font-size: 1.5rem;
-            color: variables.$primary-color;
-            margin: 0.25rem;
-            opacity: 0.6;
-        }
+    .counter-box .counter-value {
+        font-size: 1.6rem;
+    }
+
+    .counter-box .counter-separator {
+        font-size: 1.1rem;
     }
 }

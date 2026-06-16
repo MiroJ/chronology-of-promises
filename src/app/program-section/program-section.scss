@@ -1,17 +1,58 @@
-.section-list {
+@use '../../variables.scss' as v;
 
+:host {
+    display: block;
+    margin-top: 2.25rem;
+
+    &:first-of-type {
+        margin-top: 1rem;
+    }
+}
+
+.section-heading {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.75rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.15em;
+        bottom: 0.15em;
+        width: 4px;
+        border-radius: v.$radius-pill;
+        background: linear-gradient(180deg, v.$primary-color, v.$primary-dark);
+    }
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.section-list {
     .section {
         margin-bottom: 0.5rem;
 
         .section-title {
-            font-size: 1.25rem;
-            margin-top: 1rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+            font-size: 1.08rem;
+            font-weight: 600;
+            color: v.$text-color;
+            margin-top: 1.4rem;
+            margin-bottom: 0.35rem;
 
-            &:before {
-                content: '•';
-                margin: 0 0.5rem;
+            &::before {
+                content: '';
+                flex-shrink: 0;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: v.$secondary-color;
+                transform: translateY(-0.18em);
             }
         }
     }
-
 }

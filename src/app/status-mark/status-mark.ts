@@ -26,19 +26,4 @@ export class StatusMarkComponent {
                 return '';
         }
     }
-
-    getStatusSymbol(status: string): string {
-        switch (status) {
-            case 'completed':
-                return '✔️';
-            case 'in-progress':
-                return '⏳';
-            case 'failed':
-                return '❌';
-            case 'undetermined':
-                return '❔';
-            default:
-                return '';
-        }
-    }
 }

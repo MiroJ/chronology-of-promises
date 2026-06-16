@@ -1,4 +1,5 @@
-<div class="title-card">
+<header class="title-card">
+    <span class="eyebrow">Гражданско наблюдение</span>
     <h1>{{ programTitle() || 'Хронология на обещанията' }}</h1>
     <p class="subtitle">
         Обещали са ви много по време на изборите?<br />
@@ -6,7 +7,7 @@
     </p>
 
     <app-counter [startDay]="startDay()"></app-counter>
-</div>
+</header>
 
 <main class="container shadow border">
     <div class="intro">
@@ -14,11 +15,18 @@
             Всяко обещание би трябвало да включва едно или няколко действия, които да са постоянни и в посока на решаването на проблемите, които са посочени в обещанието.
         </p>
         <p>
-            Всяко действие би трябвало да има конкретен резултат, който да е видим и измерим. Всяко обещание би трябвало да има краен срок за изпълнение, който да е реалистичен и постижим.<br />
+            Всяко действие би трябвало да има конкретен резултат, който да е видим и измерим. Всяко обещание би трябвало да има краен срок за изпълнение, който да е реалистичен и постижим.
         </p>
     </div>
 
-    <hr style="max-width: 100px;" />
+    <div class="legend" aria-label="Легенда на статусите">
+        <span class="legend-item"><span class="legend-dot legend-dot--completed"></span>Изпълнено</span>
+        <span class="legend-item"><span class="legend-dot legend-dot--progress"></span>В процес</span>
+        <span class="legend-item"><span class="legend-dot legend-dot--failed"></span>Неизпълнено</span>
+        <span class="legend-item"><span class="legend-dot legend-dot--unknown"></span>Предстои</span>
+    </div>
+
+    <hr />
 
     @if (programSections().length > 0) {
     <div>
@@ -28,5 +36,9 @@
     </div>
     }
 </main>
+
+<footer class="site-footer">
+    <p>Хронология на обещанията · независим граждански проект</p>
+</footer>
 
 <router-outlet />
