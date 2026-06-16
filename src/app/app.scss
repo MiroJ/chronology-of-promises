@@ -60,26 +60,6 @@
         font-weight: 500;
         color: v.$text-color;
     }
-
-    .legend-dot {
-        width: 11px;
-        height: 11px;
-        border-radius: 50%;
-        flex-shrink: 0;
-
-        &--completed {
-            background: v.$status-completed;
-        }
-        &--progress {
-            background: v.$status-progress;
-        }
-        &--failed {
-            background: v.$status-failed;
-        }
-        &--unknown {
-            background: v.$status-unknown;
-        }
-    }
 }
 
 .site-footer {

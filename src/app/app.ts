@@ -4,10 +4,11 @@ import { RouterOutlet } from '@angular/router';
 import { forkJoin } from 'rxjs';
 import { ProgramSectionComponent } from './program-section/program-section';
 import { CounterComponent } from './counter/counter';
+import { StatusMarkComponent } from './status-mark/status-mark';
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, ProgramSectionComponent, CounterComponent],
+    imports: [RouterOutlet, ProgramSectionComponent, CounterComponent, StatusMarkComponent],
     templateUrl: './app.html',
     styleUrls: ['./app.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush
