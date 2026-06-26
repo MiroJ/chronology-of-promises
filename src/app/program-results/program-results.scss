@@ -184,8 +184,29 @@
         margin-left: 0;
 
         .result-item {
+            position: relative;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            justify-content: center;
+            gap: 0.45rem 0.6rem;
+
+            .result-date {
+                order: 1;
+            }
+
+            .result-label {
+                order: 2;
+                flex-basis: 100%;
+                text-align: center;
+            }
+
+            .references-toggle {
+                position: absolute;
+                top: 0.35rem;
+                right: 0.35rem;
+                margin: 0;
+                min-width: 1.75rem;
+                height: 1.75rem;
+            }
         }
 
         .result-references {
