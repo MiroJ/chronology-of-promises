@@ -62,6 +62,16 @@ export class App implements OnInit {
                 }
             }
 
+            const byDate = (a: ResultItem, b: ResultItem) =>
+                String(a.date).localeCompare(String(b.date));
+
+            for (const section of linkedProgramItems) {
+                section.relatedResults.sort(byDate);
+                for (const item of section.items) {
+                    item.relatedResults.sort(byDate);
+                }
+            }
+
             this.programSections.set(linkedProgramItems);
         });
     }

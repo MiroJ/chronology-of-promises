@@ -9,7 +9,7 @@
         <span class="result-label">
             {{ result.title }}
         </span>
-        @if (result.references.length > 0) {
+        @if (result.description || result.references.length > 0) {
         <button type="button" class="references-toggle" [attr.aria-controls]="referenceListId" [attr.aria-label]="referencesExpanded ? 'Collapse references' : 'Expand references'" [attr.aria-expanded]="referencesExpanded" (click)="$event.stopPropagation(); toggleReferences(referenceListId)">
             <span class="references-toggle-icon text-secondary" [class.is-expanded]="referencesExpanded" aria-hidden="true"></span>
         </button>
