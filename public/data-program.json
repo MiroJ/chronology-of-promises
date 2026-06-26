@@ -1,6 +1,8 @@
 ﻿{
     "programTitle": "Предизборна програма на Радев",
     "startDay": "2026-05-08 10:54:29",
+    "partySeats": 131,
+    "totalSeats": 240,
     "sections": [
         {
             "id": 1,

@@ -26,19 +26,38 @@
 
         &.status-completed {
             border-left-color: v.$status-completed;
+
+            .result-date {
+                background: rgba(v.$status-completed, 0.14);
+            }
         }
+
         &.status-in-progress {
             border-left-color: v.$status-progress;
+
+            .result-date {
+                background: rgba(v.$status-progress, 0.16);
+            }
         }
+
         &.status-failed {
             border-left-color: v.$status-failed;
+
+            .result-date {
+                background: rgba(v.$status-failed, 0.14);
+            }
         }
+
         &.status-undetermined {
             border-left-color: v.$status-unknown;
+
+            .result-date {
+                border-color: v.$border-color;
+            }
         }
 
         .result-date {
-            color: v.$secondary-color;
+            color: v.$text-color;
             background: v.$secondary-light;
             font-size: 0.8rem;
             font-weight: 600;
@@ -153,6 +172,7 @@
         opacity: 0;
         transform: translateY(-4px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

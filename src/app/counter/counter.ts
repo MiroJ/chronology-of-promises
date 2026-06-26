@@ -10,7 +10,16 @@ import { interval } from 'rxjs';
 })
 export class CounterComponent implements OnInit {
     @Input() startDay: string = '';
+    @Input() partySeats: number = 0;
+    @Input() totalSeats: number = 100;
     readonly elapsedTime = signal({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+    get seatsPercentage(): number {
+        if (!this.totalSeats) {
+            return 0;
+        }
+        return Math.round((this.partySeats / this.totalSeats) * 1000) / 10;
+    }
 
     constructor() {
         effect(() => {

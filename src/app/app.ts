@@ -19,6 +19,8 @@ export class App implements OnInit {
     readonly programSections = signal<ProgramSection[]>([]);
     readonly programTitle = signal('');
     readonly startDay = signal<string>('');
+    readonly partySeats = signal<number>(0);
+    readonly totalSeats = signal<number>(100);
 
     ngOnInit(): void {
         forkJoin({
@@ -27,6 +29,8 @@ export class App implements OnInit {
         }).subscribe(({ dataPrograms, dataResults }) => {
             this.programTitle.set(dataPrograms.programTitle);
             this.startDay.set(dataPrograms.startDay);
+            this.partySeats.set(dataPrograms.partySeats ?? 0);
+            this.totalSeats.set(dataPrograms.totalSeats ?? 100);
 
             const linkedProgramItems = dataPrograms.sections.map(section => ({
                 ...section,
@@ -83,6 +87,8 @@ export class App implements OnInit {
 export interface ProgramDocument {
     programTitle: string;
     startDay: string;
+    partySeats: number;
+    totalSeats: number;
     sections: ProgramSection[];
 }
 
@@ -106,7 +112,7 @@ export interface ResultItem {
     title: string;
     description: string;
     date: Date;
-    status: '' | 'ok' | 'succeeded' | 'failed';
+    status: 'in-progress' | 'undetermined' | 'succeeded' | 'failed';
     imageUrl: string;
     references: string[];
 }
