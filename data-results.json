@@ -119,6 +119,36 @@
     },
     {
         "programIds": [
+            "1.3"
+        ],
+        "title": "Парламентът прие окончателно промените в Закона за съдебната власт",
+        "date": "2026-06-26",
+        "description": "Народното събрание прие на второ (окончателно) четене промените в Закона за съдебната власт, внесени от управляващата „Прогресивна България“ (заедно с ПП и ДБ). Реформата въвежда забрана бивши председатели на върховните съдилища, главни прокурори и техните заместници да бъдат избирани за членове на ВСС, мораториум върху кадрови решения на ВСС с изтекъл мандат, разширяване на основанията за предсрочно освобождаване на главния прокурор и нови правила за избор на нов състав на ВСС и Инспектората. Мярката изпълнява обещанието за укрепване на върховенството на правото.",
+        "status": "undetermined",
+        "imageUrl": null,
+        "references": [
+            "https://www.bgonair.bg/a/2-bulgaria/422699-parlamentat-razglezhda-okonchatelno-promenite-v-zakona-za-sadebnata-vlast",
+            "https://news.bg/politics/kray-na-kadroviya-proizvol-narodnoto-sabranie-s-klyuchovi-promeni-za-vss.html",
+            "https://www.bgonair.bg/a/2-bulgaria/418411-reformata-na-progresivna-balgariya-v-sadebnata-vlast-srokove-zabrani-i-novi-pravomoshtiya-za-vss"
+        ]
+    },
+    {
+        "programIds": [
+            "1.4"
+        ],
+        "title": "SIGMA – нов инструмент с изкуствен интелект ще следи обществените поръчки",
+        "date": "2026-06-16",
+        "description": "Представен е SIGMA – нов публичен инструмент за прозрачност на обществените поръчки с цел край на скритите схеми. Това отговаря пряко на обещанието за AI контрол върху обществените поръчки.",
+        "status": "completed",
+        "imageUrl": null,
+        "references": [
+            "https://www.vesti.bg/bulgaria/kraj-na-skritite-shemi-sigma-nov-instrument-s-izkustven-intelekt-shte-sledi-obshtestvenite-porychki-6262448",
+            "https://dariknews.bg/novini/bylgariia/kraj-na-skritite-obshtestveni-porychki-puskat-sigma-sistemata-koiato-pokazva-kyde-otivat-parite-2458065",
+            "https://epicenter.bg/article/Pravitelstvoto-predstavya-SIGMA---novata-sistema-za-kontrol-na-obshtestvenite-porachki/424642/2/0"
+        ]
+    },
+    {
+        "programIds": [
             "2.3"
         ],
         "title": "Опасения за прекомерна бюрокрация и контрол от мерките на Прогресивна България",
@@ -129,75 +159,6 @@
         "references": [
             "https://novini.bg/article/2026052119374724352",
             "https://www.informo.bg/2026/05/11/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D0%B8%D0%B2%D0%BD%D0%B0-%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F-%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%B0-%D0%BC%D0%B5%D1%80"
-        ]
-    },
-    {
-        "programIds": [
-            "8"
-        ],
-        "title": "Мини \"Марица-изток\" и ТЕЦ \"Марица-изток 2\" ще работят до 2038 г., доволен е Радев",
-        "date": "2026-05-13",
-        "description": "Мини \"Марица-изток\" и ТЕЦ \"Марица-изток 2\" ще работят до 2038 г. Това каза премиерът Румен Радев в началото на правителственото заседание и допълни, че Европейската комисия е приела предложените от България реформи в енергийния сектор.\nПреди дни вицепремиерът Атанас Пеканов каза, че сред необходимите реформи е преструктурирането на \"Българския енергиен холдинг\" така, че да няма субсидиране на губещите въглищни мощности. ",
-        "status": "failed",
-        "imageUrl": "",
-        "references": [
-            "https://www.dnevnik.bg/bulgaria/2026/05/29/4919528_mini_marica-iztok_i_tec_marica_iztok_2_shte_rabotiat/",
-            "https://www.mediapool.bg/pari-za-pavets-chaira-i-rabota-na-darzhavnite-mini-i-tets-do-2038-g-dogovoril-radev-s-bryuksel-news383883.html",
-            "https://www.mediapool.bg/zamyana-na-proekti-i-reformi-za-tri-mesetsa-kabinetat-shte-spasyava-parite-po-pvu-news383771.html"
-        ]
-    },
-    {
-        "programIds": [
-            "13.2"
-        ],
-        "title": "България изпрати посланник вместо президент или министър на външните работи в Б9",
-        "date": "2026-05-13",
-        "description": "Как това се свързва с чуването на българския глас в ЕС? Петнайсет държавни глави и високопоставени лица пристигат в румънската столица за срещата на върха на \"Букурещката деветка\" (Б-9). България е представена от посланика си в НАТО.",
-        "status": "failed",
-        "imageUrl": "https://www.segabg.com/sites/default/files/_sega/styles/flexslider_full/public/2026/05/b-9.png.webp",
-        "references": [
-            "https://clubz.bg/174834",
-            "https://www.mediapool.bg/upravlyavashtite-predlagat-skandalni-promeni-v-pravilnika-na-parlamenta-preduprediha-ot-pp-i-db-news383505.html",
-            "https://www.parliament.bg/pub/cW/20260518164119_52-654-00-14-1.pdf"
-        ]
-    },
-    {
-        "programIds": [
-            "13.1"
-        ],
-        "title": "България не подкрепя трибунала срещу Путин",
-        "date": "2026-05-16",
-        "description": "България не подкрепи инициативата за специален трибунал за преследване на руския президент Владимир Путин заради военната агресия срещу Украйна. Инициативата бе подкрепена от 36 държави, предимно от Европа.",
-        "status": "failed",
-        "imageUrl": null,
-        "references": [
-            "https://darik.bg/balgaria-ne-podkrepi-tribunala-srestu-putin~528231.html"
-        ]
-    },
-    {
-        "programIds": [
-            "100.1"
-        ],
-        "title": "Правилник на Народното събрание, с големи ограничения за опозицията",
-        "date": "2026-05-19",
-        "description": "Новият правилник на Народното събрание въвежда скандални промени и значителни ограничения за опозицията.",
-        "status": "failed",
-        "imageUrl": null,
-        "references": []
-    },
-    {
-        "programIds": [
-            "4.3"
-        ],
-        "title": "Държавата участва в организацията на \"Шествие за семейството\" в София",
-        "date": "2026-06-13",
-        "description": "На 12 юни 2026 г. парламентарната група на Прогресивна България е заявила подкрепа за провеждането на шествието чрез декларация, прочетена от парламентарната трибуна на Народното събрание.Държавата участва в организацията на \"Шествие за семейството\" в София, като предостави гвардейците да водят парада.\nДали това е в интерес на премахване на неравенствата между хората, независимо от тяхната сексуална ориентация, както е записано в програмата на Прогресивна България, или е по-скоро политически ход за спечелване на подкрепа от консервативни избиратели, остава въпрос на дебат.",
-        "status": "failed",
-        "imageUrl": null,
-        "references": [
-            "https://www.ploshtadslaveikov.com/pohod-nyama-shte-ima-shestvie-za-semejstvoto-nared-s-prajda/",
-            "https://www.actualno.com/actualno/tradicionnoto-semejstvo-naistina-e-pod-zaplaha-i-tja-idva-otvytre-news_2605858.html",
-            "https://dnesplus.bg/bulgaria/shestvie-za-semeystvoto-i-gey-parad-na-13-yuni-prevzemat-tsentara-na-sofia_1226722"
         ]
     },
     {
@@ -217,7 +178,37 @@
     },
     {
         "programIds": [
-            "100.1"
+            "3.1"
+        ],
+        "title": "Кабинетът „Радев“ обяви, че всички бъдещи магистрали ще се строят на концесия",
+        "date": "2026-06-18",
+        "description": "На Национална среща на местната и централната власт на 18 юни 2026 г. премиерът Румен Радев заяви, че държавата няма ресурс сама да изгради магистралите през следващите десетилетия и затова бъдещите пътни проекти ще се реализират чрез концесии и публично-частни партньорства. Тъй като магистралите ще се строят на концесия и ще бъдат платени (с такси), мярката се отклонява от програмния ангажимент за публично изграждане на модерна пътна мрежа.",
+        "status": "failed",
+        "imageUrl": null,
+        "references": [
+            "https://m.novinite.bg/articles/286399/radev-darzhavata-nyama-resurs-sama-da-izgradi-vsichki-magistrali-v-sledvashtite-desetiletiya",
+            "https://www.economic.bg/bg/a/view/vsichki-bydeshti-magistrali-u-nas-shte-se-strojat-na-koncesija-i-shte-bydat-plateni",
+            "https://boulevardbulgaria.bg/articles/pravitelstvoto-shte-stroi-magistrali-chrez-kontsesii"
+        ]
+    },
+    {
+        "programIds": [
+            "4.1"
+        ],
+        "title": "Кабинетът „Радев“ замразява минималната работна заплата на 620,20 евро до 2028 г.",
+        "date": "2026-06-23",
+        "description": "Според указания на вицепремиера Гълъб Донев до министрите за подготовката на Бюджет 2026, правителството планира да замрази минималната работна заплата на 620,20 евро за периода 2026–2028 г., прекъсвайки за пръв път от години автоматичния механизъм за ежегодно увеличение (50% от средната заплата). Това противоречи на програмния ангажимент за ръст на доходите. Радев и социалният министър Гуцанов впоследствие отрекоха планове за замразяване, но писмените указания на Донев сочат обратното.",
+        "status": "failed",
+        "imageUrl": null,
+        "references": [
+            "https://btvnovinite.bg/bulgaria/kabinetat-radev-zamrazjava-minimalnata-zaplata-na-620-20-evro-do-2028-g.html",
+            "https://www.dnes.bg/a/1-bulgaria/725996-kabinetat-radev-zamrazyava-minimalnata-zaplata-na-62020-evro-do-2028-g",
+            "https://news.bg/politics/upravlyavashtite-zamrazyavat-minimalnata-zaplata-za-dve-godini.html"
+        ]
+    },
+    {
+        "programIds": [
+            "4.3"
         ],
         "title": "Държавата участва в организацията на \"Шествие за семейството\" в София",
         "date": "2026-06-13",
@@ -232,17 +223,186 @@
     },
     {
         "programIds": [
-            "1.4"
+            "5.1"
         ],
-        "title": "SIGMA – нов инструмент с изкуствен интелект ще следи обществените поръчки",
-        "date": "2026-06-16",
-        "description": "Представен е SIGMA – нов публичен инструмент за прозрачност на обществените поръчки с цел край на скритите схеми. Това отговаря пряко на обещанието за AI контрол върху обществените поръчки.",
+        "title": "Учители обявиха стачна готовност заради източени сметки на училищата и липса на ръст на заплатите",
+        "date": "2026-06-08",
+        "description": "Синдикат „Образование“ към КТ „Подкрепа“ обяви стачна готовност, след като финансовият министър изтегли неусвоените средства от сметките на около 300 училища до приемането на новия бюджет. От над 6500 анкетирани педагози 92% са готови да протестират, 71,1% – за национална стачка, а 53% – да не започнат учебната 2026/2027 година. Учителите настояват заплатите да достигнат записаните в КТД 125% от средната брутна заплата, което проектобюджетът не изпълнява – противно на обещанието за мотивирани учители.",
+        "status": "failed",
+        "imageUrl": null,
+        "references": [
+            "https://www.actualno.com/education/zaplashiha-uchebnata-godina-da-ne-zapochne-zaradi-iztochenite-smetki-na-uchilishtata-ot-strana-na-dyrjavata-news_2604016.html",
+            "https://banker.bg/2026/06/08/nad-90-ot-uchitelite-v-srednoto-obrazovanie-sa-gotovi-da-protestirat-za-po-visoki-zaplati/",
+            "https://www.actualno.com/education/uchitelite-v-gotovnost-za-protest-zaradi-budjeta-news_2611205.html"
+        ]
+    },
+    {
+        "programIds": [
+            "6.4"
+        ],
+        "title": "Министър Ивкова обяви старт на актуализацията на Националната здравна карта",
+        "date": "2026-05-28",
+        "description": "Здравният министър Катя Ивкова обяви началото на актуализация на Националната здравна карта с цел структурата на здравната мрежа да се адаптира към нуждите на населението и да гарантира равен достъп до здравни услуги за всеки гражданин. Сред заявените приоритети са профилактиката и промоцията на здравето, реални индикатори за качество и достъп, както и дигитализация на картата – в посока на ангажиментите за регионален достъп и профилактика пред болничната помощ.",
         "status": "completed",
         "imageUrl": null,
         "references": [
-            "https://www.vesti.bg/bulgaria/kraj-na-skritite-shemi-sigma-nov-instrument-s-izkustven-intelekt-shte-sledi-obshtestvenite-porychki-6262448",
-            "https://dariknews.bg/novini/bylgariia/kraj-na-skritite-obshtestveni-porychki-puskat-sigma-sistemata-koiato-pokazva-kyde-otivat-parite-2458065",
-            "https://epicenter.bg/article/Pravitelstvoto-predstavya-SIGMA---novata-sistema-za-kontrol-na-obshtestvenite-porachki/424642/2/0"
+            "https://www.mh.government.bg/bg/novini/aktualno/",
+            "https://novinata.bg/bulgaria/ministar-ivkova-zapochvame-aktualizaciq-na-nacionalnata-zdravna-karta/"
+        ]
+    },
+    {
+        "programIds": [
+            "8"
+        ],
+        "title": "Мини \"Марица-изток\" и ТЕЦ \"Марица-изток 2\" ще работят до 2038 г., доволен е Радев",
+        "date": "2026-05-13",
+        "description": "Мини \"Марица-изток\" и ТЕЦ \"Марица-изток 2\" ще работят до 2038 г. Това каза премиерът Румен Радев в началото на правителственото заседание и допълни, че Европейската комисия е приела предложените от България реформи в енергийния сектор.\nПреди дни вицепремиерът Атанас Пеканов каза, че сред необходимите реформи е преструктурирането на \"Българския енергиен холдинг\" така, че да няма субсидиране на губещите въглищни мощности. ",
+        "status": "failed",
+        "imageUrl": "",
+        "references": [
+            "https://www.dnevnik.bg/bulgaria/2026/05/29/4919528_mini_marica-iztok_i_tec_marica_iztok_2_shte_rabotiat/",
+            "https://www.mediapool.bg/pari-za-pavets-chaira-i-rabota-na-darzhavnite-mini-i-tets-do-2038-g-dogovoril-radev-s-bryuksel-news383883.html",
+            "https://www.mediapool.bg/zamyana-na-proekti-i-reformi-za-tri-mesetsa-kabinetat-shte-spasyava-parite-po-pvu-news383771.html"
+        ]
+    },
+    {
+        "programIds": [
+            "8.1"
+        ],
+        "title": "Министър Карамфилова: Депозитната система и „Замърсителят плаща“ са приоритет до края на 2026 г.",
+        "date": "2026-06-18",
+        "description": "Министърът на околната среда и водите Росица Карамфилова обяви, че депозитната система за опаковки е сред ключовите инструменти за по-добро разделно събиране и рециклиране, с краен срок за работещ модел 31 декември 2026 г. По реформата „Замърсителят плаща“ страната е в наказателна процедура на ЕС, а 44 млн. евро се подготвят за техника в подкрепа на принципа. Министърът предупреди, че България рециклира под 17% от битовите отпадъци, което изисква спешни мерки за интегрирана екологична политика.",
+        "status": "completed",
+        "imageUrl": null,
+        "references": [
+            "https://www.moew.government.bg/bg/ministur-karamfilova-depozitnata-sistema-za-opakovki-e-sred-klyuchovite-instrumenti-za-podobryavane-na-razdelnoto-subirane-i-povishavane-na-nivata-na-reciklirane-v-stranata/",
+            "https://www.moew.government.bg/bg/mosv-produljava-da-raboti-za-vuvejdaneto-na-depozitnata-sistema-prez-2026-g/"
+        ]
+    },
+    {
+        "programIds": [
+            "9.2"
+        ],
+        "title": "Акция на МВР във варненския район „Приморски“ – 25 арестувани, петима общински служители",
+        "date": "2026-06-26",
+        "description": "При полицейска акция на ГДБОП и ОДМВР-Варна във варненския район „Приморски“ са арестувани 25 души, петима от които общински служители. Министърът на вътрешните работи Иван Демерджиев съобщи, че на някои от тях ще бъдат повдигнати обвинения. Събират се доказателства за незаконни практики на служители и ръководни длъжностни лица във Варненската община – не само по случая с незаконното строителство в местността Баба Алино. Разследващите са проверявали документи от 2 до 4 години назад, с които се е опитвало да бъде узаконено строителството. Действието е конкретна стъпка по обещанието за законност, ред и борба с престъпността.",
+        "status": "completed",
+        "imageUrl": null,
+        "references": [
+            "https://news.bg/crime/kazusat-baba-alino-25-sa-zadarzhanite-pri-aktsiyata-vav-varna-petima-sa-obshtinski-sluzhiteli.html",
+            "https://www.varna24.bg/novini/varna/Sled-akciyata-v-Primorski-Arestuvani-sa-25-choveka-petima-ot-tyah-sa-obshtinski-sluzhiteli-2986820",
+            "https://www.novinite.bg/articles/286765/zaradi-baba-alino-gdbop-vleze-v-kmetstvoto-na-rayon-primorski"
+        ]
+    },
+    {
+        "programIds": [
+            "10.2"
+        ],
+        "title": "Министерският съвет прие план за повишаване на разходите за отбрана до 5% от БВП до 2035 г.",
+        "date": "2026-06-10",
+        "description": "Правителството одобри Национален план за постепенно повишаване на разходите за отбрана до 5% от БВП до 2035 г. в изпълнение на ангажимента от срещата на върха на НАТО в Хага през 2025 г. От тях не по-малко от 3,5% са за основни разходи за отбрана и до 1,5% за свързани с отбраната инвестиции. Допълнителният ресурс е предназначен за изграждане на отбранителни способности, превъоръжаване и модернизация на Българската армия – платформи и системи на стойност над 3,2 млрд. евро до 2030 г.",
+        "status": "completed",
+        "imageUrl": null,
+        "references": [
+            "https://banker.bg/2026/06/10/balgariya-razhodi-otbrana-5-bvp/",
+            "https://www.focus-news.net/novini/Bylgaria/Bulgariya-vdiga-razhodite-za-otbrana-do-5-ot-BVP-do-2035-g-2979092",
+            "https://m.novinite.bg/articles/286034/ms-povishavane-na-razhodite-za-otbrana-na-5-do-2035-g"
+        ]
+    },
+    {
+        "programIds": [
+            "13.1"
+        ],
+        "title": "България не подкрепя трибунала срещу Путин",
+        "date": "2026-05-16",
+        "description": "България не подкрепи инициативата за специален трибунал за преследване на руския президент Владимир Путин заради военната агресия срещу Украйна. Инициативата бе подкрепена от 36 държави, предимно от Европа.",
+        "status": "failed",
+        "imageUrl": null,
+        "references": [
+            "https://darik.bg/balgaria-ne-podkrepi-tribunala-srestu-putin~528231.html"
+        ]
+    },
+    {
+        "programIds": [
+            "13.2"
+        ],
+        "title": "България изпрати посланник вместо президент или министър на външните работи в Б9",
+        "date": "2026-05-13",
+        "description": "Как това се свързва с чуването на българския глас в ЕС? Петнайсет държавни глави и високопоставени лица пристигат в румънската столица за срещата на върха на \"Букурещката деветка\" (Б-9). България е представена от посланика си в НАТО.",
+        "status": "failed",
+        "imageUrl": "https://www.segabg.com/sites/default/files/_sega/styles/flexslider_full/public/2026/05/b-9.png.webp",
+        "references": [
+            "https://clubz.bg/174834",
+            "https://www.mediapool.bg/upravlyavashtite-predlagat-skandalni-promeni-v-pravilnika-na-parlamenta-preduprediha-ot-pp-i-db-news383505.html",
+            "https://www.parliament.bg/pub/cW/20260518164119_52-654-00-14-1.pdf"
+        ]
+    },
+    {
+        "programIds": [
+            "13.2"
+        ],
+        "title": "Радев заплаши с вето на санкциите на ЕС срещу Русия заради патриарх Кирил",
+        "date": "2026-06-23",
+        "description": "На срещата на върха на ЕС в Брюксел премиерът Румен Радев заяви, че България ще наложи вето на 21-вия пакет санкции срещу Русия, ако в него остане патриарх Кирил, с аргумента че „времето на кръстоносните походи приключи“. Позицията разтревожи Брюксел и възроди опасенията, че София може да се превърне в „нов Виктор Орбан“ и да се самоизолира в ЕС – противно на обещанието за силен и уважаван български глас в Съюза.",
+        "status": "failed",
+        "imageUrl": null,
+        "references": [
+            "https://www.mediapool.bg/radev-raztrevozhi-bryuksel-s-pozitsiya-sreshtu-chast-ot-sanktsiite-za-rusiya-news384726.html",
+            "https://fakti.bg/world/1063050-radev-i-zelenski-razgovaraha-bruksel-liderite-na-es-obaviha-podkrepa-za-chlenstvoto-na-ukraina"
+        ]
+    },
+    {
+        "programIds": [
+            "15.4"
+        ],
+        "title": "Кабинетът „Радев“ започва отделянето на въглищата от БЕХ, за да спаси близо 500 млн. евро по ПВУ",
+        "date": "2026-06-19",
+        "description": "Правителството потвърди, че ще изпълни ангажимента по ПВУ за преструктуриране на Българския енергиен холдинг, като извади „ТЕЦ Марица-изток 2“ и „Мини Марица-изток“ в отделен холдинг до края на август 2026 г. Реформата цели подобряване на корпоративното управление на държавните енергийни дружества и избягване на кръстосано субсидиране на въглищните дейности. На 19 юни 2026 г. ЕК даде положителна предварителна оценка на четвъртото плащане от 1,1 млрд. евро.",
+        "status": "completed",
+        "imageUrl": null,
+        "references": [
+            "https://www.segabg.com/hot/category-economy/kabinetut-radev-shte-produlzhi-razdelyaneto-na-beh-na-dva-holdinga",
+            "https://www.economic.bg/bg/a/view/ek-otpuska-1-1-mlrd-evro-na-bylgarija-kato-chetvyrto-plashtane-po-pvu"
+        ]
+    },
+    {
+        "programIds": [
+            "16.4"
+        ],
+        "title": "Министър Абровски разкри криза в напояването – 4 язовира искат 50 млн. евро",
+        "date": "2026-06-14",
+        "description": "Министърът на земеделието Пламен Абровски призна тежка криза в хидромелиорациите и напояването – напоявани са под 5% от историческите площи, а през последния сезон вода е достигнала едва до 348 000 дка. Четири ключови язовира (Огоста, Тракиец, Пясъчник и Домлян) се нуждаят от около 50 млн. евро за ремонт, а страната рискува да загуби около 200 млн. евро европейски средства през 2026 г. заради лошо планиране. Вместо инвестиции засега министърът обяви само, че „скоро“ ще представи програма за напояването.",
+        "status": "undetermined",
+        "imageUrl": null,
+        "references": [
+            "https://www.all-news.bg/%D0%B0%D0%B1%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B8-%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%B2%D1%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B0-%D0%B7%D0%B0-%D0%BD%D0%B0%D0%BF%D0%BE%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5%D1%82%D0%BE-%D0%BD%D0%B0-%D1%84%D0%BE%D0%BD%D0%B0-%D0%BD%D0%B0-%D1%82%D0%B5%D0%B6%D0%BA%D0%B0-%D0%BA%D1%80%D0%B8%D0%B7%D0%B0-%D0%B2-%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0_3292",
+            "https://safenews.bg/zemedelskiyat-ministar-plamen-abrovski-razkri-tezhki-problemi-v-sektora-gori-yazoviri-i-milioni-zagubi-po-evropejski-programi-video/"
+        ]
+    },
+    {
+        "programIds": [
+            "100.1"
+        ],
+        "title": "Правилник на Народното събрание, с големи ограничения за опозицията",
+        "date": "2026-05-19",
+        "description": "Новият правилник на Народното събрание въвежда скандални промени и значителни ограничения за опозицията.",
+        "status": "failed",
+        "imageUrl": null,
+        "references": []
+    },
+    {
+        "programIds": [
+            "100.1"
+        ],
+        "title": "Държавата участва в организацията на \"Шествие за семейството\" в София",
+        "date": "2026-06-13",
+        "description": "На 12 юни 2026 г. парламентарната група на Прогресивна България е заявила подкрепа за провеждането на шествието чрез декларация, прочетена от парламентарната трибуна на Народното събрание.Държавата участва в организацията на \"Шествие за семейството\" в София, като предостави гвардейците да водят парада.\nДали това е в интерес на премахване на неравенствата между хората, независимо от тяхната сексуална ориентация, както е записано в програмата на Прогресивна България, или е по-скоро политически ход за спечелване на подкрепа от консервативни избиратели, остава въпрос на дебат.",
+        "status": "failed",
+        "imageUrl": null,
+        "references": [
+            "https://www.ploshtadslaveikov.com/pohod-nyama-shte-ima-shestvie-za-semejstvoto-nared-s-prajda/",
+            "https://www.actualno.com/actualno/tradicionnoto-semejstvo-naistina-e-pod-zaplaha-i-tja-idva-otvytre-news_2605858.html",
+            "https://dnesplus.bg/bulgaria/shestvie-za-semeystvoto-i-gey-parad-na-13-yuni-prevzemat-tsentara-na-sofia_1226722"
         ]
     }
 ]
